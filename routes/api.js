@@ -1,8 +1,8 @@
-// import PatientController
-import PatientController from '../controllers/PatientController.js';
-
 // import express
 import express from 'express';
+
+// import PatientController
+import PatientController from '../controllers/PatientController.js';
 
 // membuat object router
 const router = express.Router();

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // Base directory for resolving non-relative module names
+    "paths": {
+      "@config/*": ["config/*"],
+      "@controllers/*": ["controllers/*"],
+      "@models/*": ["models/*"],
+      "@tests/*": ["tests/*"]
+    },
+    "resolveJsonModule": true, // If you are importing JSON files
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true // Enables default imports for CommonJS modules
+  },
+  "exclude": ["node_modules"], // Include all files in the root directory and subdirectories
+}

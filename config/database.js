@@ -17,8 +17,9 @@ const db = mysql.createConnection({
   port: DB_PORT,
   user: DB_USERNAME,
   password: DB_PASSWORD,
-  database: DB_DATABASE
+  database: DB_DATABASE,
 });
+
 
 /**
  * Menghubungkan ke database menggunakan method connect
