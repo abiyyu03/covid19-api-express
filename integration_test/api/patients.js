@@ -10,6 +10,14 @@ const getPatients = async () => {
     return response;
 };
 
+const createPatient = async (payload) => {
+    const response = await request(apiPatients).post('/')
+        .send(JSON.stringify(payload))
+        .set('Content-type', 'application/json');
+    return response;
+};
+
 export {
     getPatients,
+    createPatient,
 }
