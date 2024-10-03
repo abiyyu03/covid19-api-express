@@ -1,5 +1,5 @@
 // import database
-const db = require('../config/database');
+import { db } from '../config/database.js';
 
 // membuat class Patient
 class Patient {
@@ -71,5 +71,4 @@ class Patient {
   }
 }
 
-// export class Patient
-module.exports = Patient;
+export default Patient;

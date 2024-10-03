@@ -1,11 +1,12 @@
-// import PatientController
-const PatientController = require('../controllers/PatientController');
-
 // import express
-const express = require("express");
+import express from 'express';
+
+// import PatientController
+import PatientController from '../controllers/PatientController.js';
 
 // membuat object router
 const router = express.Router();
+const patientController = new PatientController();
 
 /**
  * Membuat routing
@@ -14,17 +15,19 @@ const router = express.Router();
 //   res.send("Hello Covid API Express");
 // });
 
-router.get('/patients',PatientController.index);
-router.post('/patients',PatientController.store);
-router.put('/patients/:id',PatientController.update);
-router.delete('/patients/:id',PatientController.destroy);
-router.get('/patients/:id',PatientController.show);
-router.get('/patients/search/:name',PatientController.search);
-router.get('/patients/status/positive',PatientController.positive);
-router.get('/patients/status/recovered',PatientController.recovered);
-router.get('/patients/status/dead',PatientController.dead);
+router.get('/patients',patientController.index);
+router.post('/patients',patientController.store);
+router.put('/patients/:id',patientController.update);
+router.delete('/patients/:id',patientController.destroy);
+router.get('/patients/:id',patientController.show);
+router.get('/patients/search/:name',patientController.search);
+router.get('/patients/status/positive',patientController.positive);
+router.get('/patients/status/recovered',patientController.recovered);
+router.get('/patients/status/dead',patientController.dead);
 
 // Membuat routing patient
 
 // export router
-module.exports = router;
+export {
+    router,
+}

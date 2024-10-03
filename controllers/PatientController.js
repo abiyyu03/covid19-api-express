@@ -1,4 +1,4 @@
-const Patient = require('../models/Patient');
+import Patient from '../models/Patient.js';
 
 // buat class PatientController
 class PatientController {
@@ -191,8 +191,4 @@ class PatientController {
   }
 }
 
-// membuat object PatientController
-const object = new PatientController();
-
-// export object PatientController
-module.exports = object;
+export default PatientController;

@@ -1,0 +1,26 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current" // Use the current version of Node.js for Jest
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@config": "./config",
+          "@controllers": "./controllers",
+          "@models": "./models",
+          "@tests": "./tests"
+        }
+      }
+    ]
+  ]
+}

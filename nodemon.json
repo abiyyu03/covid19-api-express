@@ -1,0 +1,6 @@
+{
+  "watch": ["."],
+  "ext": "js,json",
+  "exec": "npx babel-node app.js"
+}
+

@@ -1,0 +1,20 @@
+{
+  "name": "integration_test",
+  "version": "1.0.0",
+  "description": "integration_test_api",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha ./tests/**/*.js --reporter mochawesome --reporter-options reportDir=./report,reportFilename=api_test_report"
+  },
+  "author": "DhonyImamS",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "chai-json-schema": "^1.5.1",
+    "dotenv": "^16.4.5",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3",
+    "supertest": "^7.0.0"
+  }
+}
